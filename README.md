@@ -4,7 +4,7 @@ Application consists of layers. Each layer has slices (subfolders). Layers and s
 
 In this documentation: slices depedency flow directed from bottom to top which means that slices from bottom can build direct dependency on any from the top.
 
-Amount of slices can grow during application development. Please make sure that they follow dependency rules and keep them documented here. Do not forget to restrict imports from `.eslintrc.json` if needed. 
+Amount of slices can grow during application development. Please make sure that they follow dependency rules and keep them documented here. Do not forget to restrict imports from `.eslintrc.json` if needed.
 
 ### Layers
 
@@ -31,8 +31,8 @@ The application layer houses the business logic and serves as an intermediary be
 
 1. `/utilities` - global utility functions
 
-2. `/services` - abstractions around critical packages. 
-    
+2. `/services` - abstractions around critical packages.
+
 For example, we can invert the dependency to the `react-toastify` package interface by creating an UINotification class that defines its own interface that we need to satisfy. This will also prevent issues in case when we want to switch to another npm package that has a critical impact to the project.
 
 - Can have side effects;
@@ -143,6 +143,6 @@ Run prettier code analysis
 
 Apply prettier rules for files that are not ignored by `.prettierignore`
 
-### pnpm analyze-code 
+### pnpm analyze-code
 
 Same as `pnpm lint && pnpm prettier`
