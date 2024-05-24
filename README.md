@@ -93,7 +93,7 @@ The presentation layer is the user interface (UI) part. It consists of component
 - Can have side effects;
 - Can be composed from utilities;
 
-9. `/widgets` - 3-nd type of reusable UI components
+9. `/widgets` - 3-d type of reusable UI components
 
 - Can have side effects (api calls, action dispatches);
 - Can be independent from incoming props and do specific scope of work;
